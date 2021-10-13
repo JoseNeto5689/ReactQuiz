@@ -1,21 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StatusBar } from 'react-native';
+import Option from './components/option';
+import OptionBox from './components/optionBox';
+import Question from './components/question';
+import Timer from './components/timer';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
-      <StatusBar style="auto" />
+  return ( <>
+    <StatusBar style="auto" />
+    <View style = { { backgroundColor: "#EBEBEB" } } >
+      <Question/>
+      <OptionBox/>
+      <Timer/>
     </View>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
