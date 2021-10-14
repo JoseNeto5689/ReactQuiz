@@ -4,7 +4,7 @@ import clock from "../src/clock-reduzido.png"
 import { OpenSans_700Bold, useFonts } from "@expo-google-fonts/open-sans";
 import AppLoading from "expo-app-loading";
 
-export default function() {
+export default function({time}) {
     let [fontsLoaded] = useFonts({
         OpenSans_700Bold
     })
@@ -13,10 +13,9 @@ export default function() {
         return <AppLoading />;
     }
     return <>
-    
         <View style = { styles.container } >
             <Image source = { clock } style= { { resizeMode: "cover" } } />
-            <Text style = { styles.timer }> 00:50 </Text>
+            <Text style = { styles.timer }> {time} </Text>
         </View>
     </>
 }

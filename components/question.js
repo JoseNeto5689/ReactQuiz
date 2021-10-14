@@ -11,7 +11,7 @@ export default function(){
     })
     
     if (!fontsLoaded) {
-        return <AppLoading />;
+        return <AppLoading />
     }
     return <>
     <View>
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
         marginVertical: 20,
         fontFamily: "Inter_900Black",
         fontSize: 28,
+        textDecorationLine: "underline",
     },
     questionText: {
         fontFamily: "Inter_400Regular",
