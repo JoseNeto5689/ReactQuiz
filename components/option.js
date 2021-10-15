@@ -1,9 +1,10 @@
-import React from "react";
+import React, { BackHandler } from "react";
 import { Text, StyleSheet, TouchableHighlight, Alert } from "react-native";
 
-export default function( { content } ){
+export default function( { content, action } ){
+    
     return <>
-        <TouchableHighlight style = { styles.optionBox } onPress = { () => { alert("Acertou!") }  } underlayColor = { "#D44426" } >
+        <TouchableHighlight style = { styles.optionBox } underlayColor = { "#D44426" } onPress = { () => {action()} } >
             <Text style = { styles.optionText } > { content } </Text>
         </TouchableHighlight>
     </>
