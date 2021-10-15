@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StatusBar, Text } from 'react-native';
+import { View, StatusBar } from 'react-native';
 import Question from './question';
 import OptionBox from "./optionBox"
 import Timer from "./timer"
