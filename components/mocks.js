@@ -11,7 +11,7 @@ const mocks = {
             option4: "<Text/>",
         },
         timer: {
-            time: 50,
+            time: 5,
         }
     },
     question2: {

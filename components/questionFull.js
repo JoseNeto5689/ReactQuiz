@@ -3,6 +3,7 @@ import { View, StatusBar, Text } from 'react-native';
 import Question from './question';
 import OptionBox from "./optionBox"
 import Timer from "./timer"
+import Error from './error';
 
 export default function({ question, options, timer }) {
   const [seconds, setSeconds] = React.useState(timer.time);
@@ -23,6 +24,6 @@ export default function({ question, options, timer }) {
     </> }
 
   else{
-    return <Text>Olá Mundo</Text>
+    return <Error/>
   }
 }
