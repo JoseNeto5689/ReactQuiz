@@ -4,23 +4,24 @@ import Question from './question';
 import OptionBox from "./optionBox"
 import Timer from "./timer"
 
-export default function() {
-  const [seconds, setSeconds] = React.useState(15);
+export default function({ question, options, timer }) {
+  const [seconds, setSeconds] = React.useState(timer.time);
   React.useEffect(() => {
     if (seconds > 0) {
       setTimeout(() => setSeconds(seconds - 1), 1000);
     } 
   });
+
   if(seconds !== 0){
-  return <>
-    <StatusBar style="auto" />
-    <View style = { { backgroundColor: "#EBEBEB" } } >
-      <Question/>
-      <OptionBox/>
-      <Timer time = {seconds}/>
-    </View>
-    </>
-}
+    return <>
+      <StatusBar style="auto" />
+      <View style = { { backgroundColor: "#EBEBEB", height: "100%" } } >
+        <Question {...question} />
+        <OptionBox {...options}/>
+        <Timer time = {seconds}/>
+      </View>
+    </> }
+
   else{
     return <Text>Olá Mundo</Text>
   }

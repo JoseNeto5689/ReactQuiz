@@ -22,13 +22,13 @@ export default function({time}) {
 
 const styles = StyleSheet.create({
     container: {
-      height: 400,
       alignItems: 'center',
-      marginTop: 20,
+      marginTop: 30,
     },
     timer: {
         fontFamily: "OpenSans_700Bold",
-        fontSize: 26,
-        color: "red"
+        fontSize: 30,
+        color: "red",
+        marginTop: 5,
     }
   });

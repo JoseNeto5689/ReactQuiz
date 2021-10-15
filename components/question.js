@@ -4,7 +4,7 @@ import { Inter_400Regular ,Inter_900Black, useFonts } from "@expo-google-fonts/i
 import { OpenSans_400Regular } from "@expo-google-fonts/open-sans";
 import AppLoading from 'expo-app-loading';
 
-export default function(){
+export default function({ questionNum, questionText }){
 
     let [fontsLoaded] = useFonts({
         Inter_900Black, Inter_400Regular, OpenSans_400Regular
@@ -15,8 +15,8 @@ export default function(){
     }
     return <>
     <View>
-        <Text style = { styles.questionNumber } >Primeira Questão!</Text>
-        <Text style = { styles.questionText }> Qual dessas opções representa uma tag de texto corretamente em React Native?</Text>
+        <Text style = { styles.questionNumber } > { questionNum } </Text>
+        <Text style = { styles.questionText }>{ questionText }</Text>
     </View>
     </>
     

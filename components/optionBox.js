@@ -2,14 +2,14 @@ import React from "react";
 import Option from "./option";
 import { View, StyleSheet } from "react-native";
 
-export default function(){
+export default function({ option1, option2, option3, option4 }){
 
     return (
     <View style = { styles.container } >
-      <Option content = { "<Texto> </Texto>" } />
-      <Option content = { "<Text> </Text>" } />
-      <Option content = { "<p> </p>" } />
-      <Option content = { "<Text/>" } />
+      <Option content = { option1 } />
+      <Option content = { option2 } />
+      <Option content = { option3 } />
+      <Option content = { option4 } />
     </View>
     )
 }
