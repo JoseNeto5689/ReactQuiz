@@ -6,7 +6,6 @@ import Win from './components/win';
 import Error from './components/error';
 import { NavigationContainer } from './node_modules/@react-navigation/native';
 import { createNativeStackNavigator } from './node_modules/@react-navigation/native-stack';
-import timer from './components/timer';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,7 +16,7 @@ function HomeScreen({ navigation }){
 
 function Question01({ navigation }){
   return <>
-    <Question { ...mocks.question1 } navigation = { navigation } />
+    <Question { ...mocks.question1 } navigation = { navigation }/>
   </>
 }
 

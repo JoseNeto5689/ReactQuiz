@@ -1,7 +1,7 @@
 import React, { BackHandler } from "react";
 import { Text, StyleSheet, TouchableHighlight, Alert } from "react-native";
 
-export default function( { content, action } ){
+export default function( { content, action, time } ){
     
     return <>
         <TouchableHighlight style = { styles.optionBox } underlayColor = { "#D44426" } onPress = { () => {action()} } >

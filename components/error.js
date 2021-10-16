@@ -6,7 +6,7 @@ import Timer from "./timer"
 
 export default function({navigation}) {
     return <>
-        <Modal transparent = { true } animationType = "slide">
+        <Modal transparent = { true } animationType = "fade">
             <View style = { styles.modalView } >
                 <View style = {styles.failBox}>
                     <Text style = { styles.failTitle } > Você falhou! </Text>

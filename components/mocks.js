@@ -17,7 +17,7 @@ const mocks = {
             op4: 0,
         },
         timer: {
-            time: 500,
+            time: 5,
         }
     },
     question2: {

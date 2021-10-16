@@ -3,7 +3,6 @@ import Option from "./option";
 import { View, StyleSheet } from "react-native";
 
 export default function({ option1, option2, option3, option4, op1,op2,op3,op4, navigation}){
-
 const verify = (num) => {
   if(num === 0){
     navigation.navigate("Error")
