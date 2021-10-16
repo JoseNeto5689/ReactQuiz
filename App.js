@@ -16,7 +16,7 @@ function HomeScreen({ navigation }){
 
 function Question01({ navigation }){
   return <>
-    <Question { ...mocks.question1 } navigation = { navigation }/>
+    <Question { ...mocks.question1 } navigation = { navigation } nextScreen = "WinScreen"/>
   </>
 }
 

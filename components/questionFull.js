@@ -4,7 +4,7 @@ import Question from './question';
 import Timer from "./timer"
 import Error from './error';
 
-export default function({ question, options, timer, navigation, answer }) {
+export default function({ question, options, timer, navigation, answer, nextScreen }) {
   let time
   let [seconds, setSeconds] = React.useState(timer.time);
   React.useEffect( () => {
@@ -20,7 +20,7 @@ export default function({ question, options, timer, navigation, answer }) {
         navigation.navigate("Error")
       }
       if(num === 1){
-      navigation.navigate("WinScreen")
+      navigation.navigate(nextScreen)
       }
     }
   if(seconds !== 0){
