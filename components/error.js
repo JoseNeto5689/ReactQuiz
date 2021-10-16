@@ -1,8 +1,5 @@
 import React from "react";
-import { Modal, Text, StyleSheet, View, TouchableOpacity } from "react-native";
-import Question from './question';
-import OptionBox from "./optionBox"
-import Timer from "./timer"
+import { Modal, Text, StyleSheet, View, TouchableHighlight } from "react-native";
 
 export default function({navigation}) {
     return <>
@@ -12,12 +9,12 @@ export default function({navigation}) {
                     <Text style = { styles.failTitle } > Você falhou! </Text>
                     <Text style = { styles.failMsg }> Deseja tentar novamente? </Text>
                     <View style = { styles.failOptions }>
-                        <TouchableOpacity style = { styles.yes } onPress = { () => { navigation.navigate("HomeScreen") } } >
+                        <TouchableHighlight style = { styles.yes } onPress = { () => { navigation.navigate("HomeScreen") } } >
                             <Text style = { styles.text } >Sim</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity style = { styles.no } >
+                        </TouchableHighlight>
+                        <TouchableHighlight style = { styles.no } >
                             <Text style = { styles.text } >Não</Text>
-                        </TouchableOpacity>
+                        </TouchableHighlight>
                     </View>
                 </View>
             </View>

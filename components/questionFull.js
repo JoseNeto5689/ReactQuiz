@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableHighlight, StatusBar } from "react-native";
 import Question from './question';
-import OptionBox from "./optionBox"
 import Timer from "./timer"
 import Error from './error';
 
@@ -68,10 +67,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginVertical: 20,
-},
-optionText: {
+  },
+  optionText: {
     fontSize: 20,
     color: "#201F1F",
     fontWeight: "bold",
-}
+  }
 });
