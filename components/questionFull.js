@@ -26,7 +26,7 @@ export default function({ question, options, timer, navigation, answer, nextScre
   if(seconds !== 0){
     return <>
       <StatusBar style="auto" />
-      <View style = { { backgroundColor: "#EBEBEB", height: "100%" } } >
+      <View style = { { backgroundColor: "#EBEBEB", height: "100%", alignItems: "center" } } >
         <Question {...question}/>
         <View style = { styles.container } >
           <TouchableHighlight style = { styles.optionBox } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time) ;verify(answer.op1)} } >
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   optionBox: {
     height: 60,
-    width: 270,
+    width: 300,
     backgroundColor: "orange",
     borderColor: "#D44426",
     borderWidth: 6,

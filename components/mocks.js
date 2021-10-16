@@ -22,17 +22,23 @@ const mocks = {
     },
     question2: {
         question: {
-            questionNum: "Primeira Questão",
-            questionText: "Qual dessas opções representa uma tag de texto corretamente em React Native?" 
+            questionNum: "Segunda Questão",
+            questionText: "Qual dos opções abaixo representa a forma de correta de se por uma imagem em React Native (x = source)? " 
         },
         options: {
-            option1: "<Texto> </Texto>",
-            option2: "<Text> </Text>",
-            option3: "<p> </p>",
-            option4: "<Text/>",
+            option1: "<Image source = { x }/>",
+            option2: "<Image>x<Image/>",
+            option3: "Image = x",
+            option4: "Import x from source",
+        },
+        answer: {
+            op1: 1,
+            op2: 0,
+            op3: 0,
+            op4: 0,
         },
         timer: {
-            time: 50,
+            time: 5,
         }
     },
 }

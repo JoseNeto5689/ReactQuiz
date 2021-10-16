@@ -16,7 +16,13 @@ function HomeScreen({ navigation }){
 
 function Question01({ navigation }){
   return <>
-    <Question { ...mocks.question1 } navigation = { navigation } nextScreen = "WinScreen"/>
+    <Question { ...mocks.question1 } navigation = { navigation } nextScreen = "Question02"/>
+  </>
+}
+
+function Question02({ navigation }){
+  return <>
+    <Question { ...mocks.question2 } navigation = { navigation } nextScreen = "WinScreen"/>
   </>
 }
 
@@ -36,6 +42,7 @@ export default function App() {
     <Stack.Navigator initialRouteName="HomeScreen" >
       <Stack.Screen name = "HomeScreen" component = { HomeScreen } options = { { headerShown: false } } />
       <Stack.Screen name = "Question01" component = { Question01 } options = { { headerShown: false } } />
+      <Stack.Screen name = "Question02" component = { Question02 } options = { { headerShown: false } } />
       <Stack.Screen name = "WinScreen" component = { Winner } options = { { headerShown: false } } />
       <Stack.Screen name = "Error" component = { Erro } options = { { headerShown: false } } />
     </Stack.Navigator>
