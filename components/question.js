@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         marginVertical: 20,
         fontFamily: "Inter_900Black",
         fontSize: 28,
-        textDecorationLine: "underline",
+        //textDecorationLine: "underline",
     },
     questionText: {
         fontFamily: "Inter_400Regular",

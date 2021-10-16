@@ -5,7 +5,7 @@ import OptionBox from "./optionBox"
 import Timer from "./timer"
 import Error from './error';
 
-export default function({ question, options, timer }) {
+export default function({ question, options, timer, navigation, answer }) {
   const [seconds, setSeconds] = React.useState(timer.time);
   React.useEffect(() => {
     if (seconds > 0) {
@@ -17,8 +17,8 @@ export default function({ question, options, timer }) {
     return <>
       <StatusBar style="auto" />
       <View style = { { backgroundColor: "#EBEBEB", height: "100%" } } >
-        <Question {...question} />
-        <OptionBox {...options}/>
+        <Question {...question}/>
+        <OptionBox {...options} navigation = { navigation } { ...answer }/>
         <Timer time = {seconds}/>
       </View>
     </> }

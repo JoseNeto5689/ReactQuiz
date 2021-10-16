@@ -4,18 +4,15 @@ import Question from './question';
 import OptionBox from "./optionBox"
 import Timer from "./timer"
 
-export default function() {
+export default function({navigation}) {
     return <>
-        <Question/>
-        <OptionBox/>
-        <Timer time = { 0 }/>
         <Modal transparent = { true } animationType = "slide">
             <View style = { styles.modalView } >
                 <View style = {styles.failBox}>
                     <Text style = { styles.failTitle } > Você falhou! </Text>
                     <Text style = { styles.failMsg }> Deseja tentar novamente? </Text>
                     <View style = { styles.failOptions }>
-                        <TouchableOpacity style = { styles.yes }>
+                        <TouchableOpacity style = { styles.yes } onPress = { () => { navigation.navigate("HomeScreen") } } >
                             <Text style = { styles.text } >Sim</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style = { styles.no } >

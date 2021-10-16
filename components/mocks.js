@@ -10,8 +10,14 @@ const mocks = {
             option3: "<p> </p>",
             option4: "<Text/>",
         },
+        answer: {
+            op1: 0,
+            op2: 1,
+            op3: 0,
+            op4: 0,
+        },
         timer: {
-            time: 5,
+            time: 500,
         }
     },
     question2: {
