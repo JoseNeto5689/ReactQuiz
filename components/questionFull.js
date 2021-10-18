@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, TouchableHighlight, StatusBar } from "react-nat
 import Question from './question';
 import Timer from "./timer"
 import Error from './error';
+import Option from './option';
 
 export default function({ question, options, timer, navigation, answer, nextScreen, additionalBoxStyle, additionalTextStyle }) {
   let time
@@ -15,32 +16,24 @@ export default function({ question, options, timer, navigation, answer, nextScre
     }
     }})
 
-    const verify = (num) => {
-      if(num === 0){
-        navigation.navigate("Error")
-      }
-      if(num === 1){
-      navigation.navigate(nextScreen)
-      }
+  const verify = (num) => {
+    if(num === 0){
+      navigation.navigate("Error")
     }
+    if(num === 1){
+    navigation.navigate(nextScreen)
+    }
+  }
   if(seconds !== 0){
     return <>
       <StatusBar style="auto" />
       <View style = { { backgroundColor: "#EBEBEB", height: "100%", alignItems: "center" } } >
         <Question {...question}/>
         <View style = { styles.container } >
-          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time) ;verify(answer.op1)} } >
-                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option1 } </Text>
-          </TouchableHighlight>
-          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time) ;verify(answer.op2)} } >
-                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option2 } </Text>
-          </TouchableHighlight>
-          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time);verify(answer.op3)} } >
-                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option3 } </Text>
-          </TouchableHighlight>
-          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time);verify(answer.op4)} } >
-                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option4 } </Text>
-          </TouchableHighlight>
+          <Option boxStyle = { additionalBoxStyle } textStyle = { additionalTextStyle } content = { options.option1 } action = { () => { clearInterval(time);verify(answer.op1) } } />
+          <Option boxStyle = { additionalBoxStyle } textStyle = { additionalTextStyle } content = { options.option2 } action = { () => { clearInterval(time);verify(answer.op2) } } />
+          <Option boxStyle = { additionalBoxStyle } textStyle = { additionalTextStyle } content = { options.option3 } action = { () => { clearInterval(time);verify(answer.op3) } } />
+          <Option boxStyle = { additionalBoxStyle } textStyle = { additionalTextStyle } content = { options.option4 } action = { () => { clearInterval(time);verify(answer.op4) } } />
         </View>
         <Timer time = {seconds}/>
       </View>
@@ -75,3 +68,20 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   }
 });
+
+/*
+
+          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time) ;verify(answer.op1)} } >
+                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option1 } </Text>
+          </TouchableHighlight>
+          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time) ;verify(answer.op2)} } >
+                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option2 } </Text>
+          </TouchableHighlight>
+          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time);verify(answer.op3)} } >
+                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option3 } </Text>
+          </TouchableHighlight>
+          <TouchableHighlight style = { [styles.optionBox,additionalBoxStyle.index ] } underlayColor = { "#D44426" } onPress = { () => { clearInterval(time);verify(answer.op4)} } >
+                  <Text style = { [styles.optionText, additionalTextStyle.index] } > { options.option4 } </Text>
+          </TouchableHighlight>
+
+*/

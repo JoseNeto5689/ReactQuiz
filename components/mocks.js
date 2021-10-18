@@ -23,7 +23,7 @@ const mocks = {
             op4: 0,
         },
         timer: {
-            time: 30,
+            time: 5,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -62,7 +62,7 @@ const mocks = {
             op4: 0,
         },
         timer: {
-            time: 30,
+            time: 5,
         },
         additionalBoxStyle: {
             index: {
