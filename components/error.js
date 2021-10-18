@@ -1,5 +1,6 @@
 import React from "react";
 import { Modal, Text, StyleSheet, View, TouchableHighlight } from "react-native";
+import styles from "./styles";
 
 export default function({navigation}) {
     return <>
@@ -21,62 +22,3 @@ export default function({navigation}) {
         </Modal>
     </>
 }
-
-const styles = StyleSheet.create({
-    modalView: {
-        height: "100%",
-        width: "100%",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-    failBox: {
-        height: "25%",
-        width: "80%",
-        backgroundColor: "#2596be",
-        borderRadius: 20,
-        borderWidth: 4,
-        borderColor: "yellow",
-        marginBottom: "30%",
-    },
-    failTitle: {
-        textAlign: "center",
-        marginTop: 30,
-        fontSize: 24,
-        color: "red",
-        fontWeight: "bold",
-    },
-    failMsg: {
-        marginTop: 10,
-        textAlign: "center",
-        fontSize: 22,
-        color: "white",
-    },
-    failOptions:{
-        marginTop: 25,
-        flexDirection: "row",
-        justifyContent: "center",
-    },
-    yes: {
-        paddingHorizontal: 30,
-        paddingVertical: 5,
-        borderWidth: 3,
-        borderColor: "black",
-        borderRadius: 5,
-        marginHorizontal: 10,
-        backgroundColor: "green",
-    },
-    no: {
-        paddingHorizontal: 30,
-        paddingVertical: 5,
-        borderWidth: 3,
-        borderColor: "black",
-        borderRadius: 5,
-        marginHorizontal: 10,
-        backgroundColor: "red",
-    },
-    text: {
-        color: "white",
-        fontWeight: "bold"
-    }
-})

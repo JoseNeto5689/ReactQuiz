@@ -6,7 +6,7 @@ const mocks = {
             questionText: "Qual dessas opções representa uma tag de texto corretamente em React Native?",
             questionStyle: StyleSheet.create({
                 index: {
-
+                    
                 }
             }) 
         },
@@ -45,7 +45,7 @@ const mocks = {
             questionText: "Qual dos opções abaixo representa a forma de correta de se por uma imagem em React Native? ",
             questionStyle: StyleSheet.create({
                 index: {
-                    
+                    fontSize: 20
                 }
             })  
         },
@@ -64,16 +64,56 @@ const mocks = {
         timer: {
             time: 5,
         },
-        additionalBoxStyle: {
+        additionalBoxStyle: StyleSheet.create({
             index: {
-                
+                width: "75%"
             }
+        })
+
+        ,
+        additionalTextStyle: StyleSheet.create({
+            index: {
+                fontSize: 20,
+            }
+        })
+    },
+    question3: {
+        question: {
+            questionNum: "Terceira Questão",
+            questionText: "Qual dos opções abaixo representa o comando para instalar o expo? ",
+            questionStyle: StyleSheet.create({
+                index: {
+                    fontSize: 23
+                }
+            })  
         },
-        additionalTextStyle: {
+        options: {
+            option1: "sudo apt install expo",
+            option2: "download expo -u",
+            option3: "git clone https://react-native.expo",
+            option4: "npm install -g expo-cli exp",
+        },
+        answer: {
+            op1: 0,
+            op2: 0,
+            op3: 0,
+            op4: 1,
+        },
+        timer: {
+            time: 5,
+        },
+        additionalBoxStyle: StyleSheet.create({
             index: {
-                
+                width: "85%"
             }
-        }
+        })
+
+        ,
+        additionalTextStyle: StyleSheet.create({
+            index: {
+                fontSize: 18
+            }
+        })
     },
 }
 

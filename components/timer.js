@@ -1,8 +1,9 @@
 import React from "react";
-import { Text, Image, View, StyleSheet } from "react-native";
+import { Text, Image, View } from "react-native";
 import clock from "../src/clock-reduzido.png"
 import { OpenSans_700Bold, useFonts } from "@expo-google-fonts/open-sans";
 import AppLoading from "expo-app-loading";
+import styles from "./styles";
 
 export default function({time}) {
     let [fontsLoaded] = useFonts({
@@ -13,22 +14,9 @@ export default function({time}) {
         return <AppLoading />;
     }
     return <>
-        <View style = { styles.container } >
+        <View style = { styles.timerContainer } >
             <Image source = { clock } style= { { resizeMode: "cover" } } />
             <Text style = { styles.timer }> {time} </Text>
         </View>
     </>
 }
-
-const styles = StyleSheet.create({
-    container: {
-      alignItems: 'center',
-      marginTop: 30,
-    },
-    timer: {
-        fontFamily: "OpenSans_700Bold",
-        fontSize: 30,
-        color: "red",
-        marginTop: 5,
-    }
-  });
