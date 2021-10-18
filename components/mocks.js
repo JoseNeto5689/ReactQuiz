@@ -1,8 +1,14 @@
+import { StyleSheet } from "react-native"
 const mocks = {
     question1: {
         question: {
             questionNum: "Primeira Questão",
-            questionText: "Qual dessas opções representa uma tag de texto corretamente em React Native?" 
+            questionText: "Qual dessas opções representa uma tag de texto corretamente em React Native?",
+            questionStyle: StyleSheet.create({
+                index: {
+
+                }
+            }) 
         },
         options: {
             option1: "<Texto> </Texto>",
@@ -17,13 +23,31 @@ const mocks = {
             op4: 0,
         },
         timer: {
-            time: 5,
-        }
+            time: 30,
+        },
+        additionalBoxStyle: StyleSheet.create({
+            index: {
+                width: "75%"
+            }
+        })
+
+        ,
+        additionalTextStyle: StyleSheet.create({
+            index: {
+                fontSize: 20,
+            }
+        })
+
     },
     question2: {
         question: {
             questionNum: "Segunda Questão",
-            questionText: "Qual dos opções abaixo representa a forma de correta de se por uma imagem em React Native (x = source)? " 
+            questionText: "Qual dos opções abaixo representa a forma de correta de se por uma imagem em React Native? ",
+            questionStyle: StyleSheet.create({
+                index: {
+                    
+                }
+            })  
         },
         options: {
             option1: "<Image source = { x }/>",
@@ -38,9 +62,63 @@ const mocks = {
             op4: 0,
         },
         timer: {
-            time: 5,
+            time: 30,
+        },
+        additionalBoxStyle: {
+            index: {
+                
+            }
+        },
+        additionalTextStyle: {
+            index: {
+                
+            }
         }
     },
 }
 
 export default mocks
+
+/*
+
+question1: {
+        question: {
+            questionNum: "",
+            questionText: "",
+            questionStyle: StyleSheet.create({
+                index: {
+
+                }
+            }) 
+        },
+        options: {
+            option1: "",
+            option2: "",
+            option3: "",
+            option4: "",
+        },
+        answer: {
+            op1: 0,
+            op2: 0,
+            op3: 0,
+            op4: 0,
+        },
+        timer: {
+            time: ,
+        },
+        additionalBoxStyle: StyleSheet.create({
+            index: {
+                
+            }
+        })
+
+        ,
+        additionalTextStyle: StyleSheet.create({
+            index: {
+                
+            }
+        })
+
+    },
+
+*/ 

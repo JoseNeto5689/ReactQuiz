@@ -9,7 +9,7 @@ export default function({ navigation }) {
             <Text style = { styles.quizText} >React Native Quiz!</Text>
             <View>
                 <TouchableHighlight style = { styles.optionBox } underlayColor = { "#D44426" } onPress = { () => { navigation.navigate("Question01") } } >
-                    <Text style = { styles.optionText } >Inicar Jogo</Text>
+                    <Text style = { [styles.optionText] } >Inicar Jogo</Text>
                 </TouchableHighlight>
                 <TouchableHighlight style = { styles.optionBox } underlayColor = { "#D44426" } onPress = { () => { BackHandler.exitApp() } } >
                     <Text style = { styles.optionText } >Sair do Jogo</Text>
