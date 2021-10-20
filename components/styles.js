@@ -39,8 +39,10 @@ const styles = StyleSheet.create({
     main: {
         alignItems: "center",
         justifyContent: "center",
+        alignContent: "center",
         flex: 1,
-        marginBottom: "30%"
+        marginBottom: "30%",
+        marginTop: 0,
 
     },
     quizText: {
@@ -99,39 +101,43 @@ const styles = StyleSheet.create({
         marginHorizontal: 10,
         backgroundColor: "red",
     },
-    text: {
+    textFail: {
         color: "white",
         fontWeight: "bold"
     },
     questionNumber: {
         textAlign: "center",
-        marginVertical: 20,
+        marginTop: 30,
         fontFamily: "Inter_900Black",
         fontSize: 28,
     },
     questionText: {
         fontFamily: "Inter_400Regular",
         fontSize: 22,
-        marginTop: 10,
-        textAlign: "center"
+        textAlign: "center",
+        color: "#0D8094",
+        paddingHorizontal: 7,
         
     },
     optionsContainer: {
         alignItems: 'center',
-        marginTop: 20,
         width: "100%",
 
     },
     timerContainer: {
         alignItems: 'center',
-        marginTop: 30,
     },
     timer: {
           fontFamily: "OpenSans_700Bold",
           fontSize: 30,
           color: "red",
           marginTop: 5,
-          marginBottom: 20
+          marginBottom: 40,
+    },
+    homeScreenImage: {
+        resizeMode: "contain",
+        width: "45%",
+        height: "37%"
     }
 })
 

@@ -11,10 +11,10 @@ export default function({navigation}) {
                     <Text style = { styles.failMsg }> Deseja tentar novamente? </Text>
                     <View style = { styles.failOptions }>
                         <TouchableHighlight style = { styles.yes } onPress = { () => { navigation.navigate("HomeScreen") } } >
-                            <Text style = { styles.text } >Sim</Text>
+                            <Text style = { styles.textFail } >Sim</Text>
                         </TouchableHighlight>
                         <TouchableHighlight style = { styles.no } >
-                            <Text style = { styles.text } >Não</Text>
+                            <Text style = { styles.textFail } >Não</Text>
                         </TouchableHighlight>
                     </View>
                 </View>

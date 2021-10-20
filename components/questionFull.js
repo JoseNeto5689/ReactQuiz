@@ -5,6 +5,7 @@ import Timer from "./timer"
 import Error from './error';
 import Option from './option';
 import styles from './styles';
+import Line from './line';
 
 export default function({ question, options, timer, navigation, answer, nextScreen, additionalBoxStyle, additionalTextStyle }) {
   let time
@@ -28,7 +29,7 @@ export default function({ question, options, timer, navigation, answer, nextScre
   if(seconds !== 0){
     return <>
       <StatusBar style="auto" />
-      <View style = { { backgroundColor: "#EBEBEB", height: "100%", alignItems: "center", justifyContent: "space-around" } } >
+      <View style = { { backgroundColor: "#EBEBEB", height: "100%", alignItems: "center", justifyContent: "space-between" } } >
         <Question {...question}/>
         <View style = { styles.optionsContainer } >
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option1 } action = { () => { clearInterval(time);verify(answer.op1) } } />
@@ -36,6 +37,7 @@ export default function({ question, options, timer, navigation, answer, nextScre
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option3 } action = { () => { clearInterval(time);verify(answer.op3) } } />
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option4 } action = { () => { clearInterval(time);verify(answer.op4) } } />
         </View>
+        
         <Timer time = {seconds}/>
       </View>
     </> }

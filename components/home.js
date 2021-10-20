@@ -7,7 +7,8 @@ export default function({ navigation }) {
     return <>
         <StatusBar/>
         <View style = {styles.main} >
-            <Image source = { require("../src/brain-reduzido.png") }/>
+            {/*<Image source = { require("../src/brain-reduzido.png") }/>*/}
+            <Image source = { require("../src/spamton-quiz.png") } style = { styles.homeScreenImage } />
             <Text style = { styles.quizText} >React Native Quiz!</Text>
             <View>
             <Option content = { "Iniciar Jogo" } action = { () => { navigation.navigate("Question01") } } />

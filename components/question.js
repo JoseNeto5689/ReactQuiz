@@ -4,6 +4,7 @@ import { Inter_400Regular ,Inter_900Black, useFonts } from "@expo-google-fonts/i
 import { OpenSans_400Regular } from "@expo-google-fonts/open-sans";
 import AppLoading from 'expo-app-loading';
 import styles from "./styles";
+import Line from "./line";
 
 export default function({ questionNum, questionText, questionStyle }){
 
@@ -17,6 +18,7 @@ export default function({ questionNum, questionText, questionStyle }){
     return <>
     <View>
         <Text style = { styles.questionNumber } > { questionNum } </Text>
+        <Line/>
         <Text style = { [styles.questionText, questionStyle.index] }>{ questionText }</Text>
     </View>
     </>

@@ -1,4 +1,6 @@
 import { StyleSheet } from "react-native"
+
+
 const mocks = {
     question1: {
         question: {
@@ -23,7 +25,7 @@ const mocks = {
             op4: 0,
         },
         timer: {
-            time: 5,
+            time: 15,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -42,7 +44,7 @@ const mocks = {
     question2: {
         question: {
             questionNum: "Segunda Questão",
-            questionText: "Qual dos opções abaixo representa a forma de correta de se por uma imagem em React Native? ",
+            questionText: "Qual dos opções abaixo representa a forma de correta de se usar uma imagem em React Native? \n(x = image source) ",
             questionStyle: StyleSheet.create({
                 index: {
                     fontSize: 20
@@ -51,9 +53,9 @@ const mocks = {
         },
         options: {
             option1: "<Image source = { x }/>",
-            option2: "<Image>x<Image/>",
+            option2: "<Image> x <Image/>",
             option3: "Image = x",
-            option4: "Import x from source",
+            option4: "Import image from x",
         },
         answer: {
             op1: 1,
@@ -62,7 +64,7 @@ const mocks = {
             op4: 0,
         },
         timer: {
-            time: 5,
+            time: 15,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -100,7 +102,7 @@ const mocks = {
             op4: 1,
         },
         timer: {
-            time: 5,
+            time: 15,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -114,6 +116,88 @@ const mocks = {
                 fontSize: 18
             }
         })
+    },
+    question4: {
+        question: {
+            questionNum: "Quarta Questão",
+            questionText: "Qual dessas opções se refere a forma correta de fazer um conteúdo sobrepor outro? \n content = (elementos sobrepostos)",
+            questionStyle: StyleSheet.create({
+                index: {
+                    fontSize: 20,
+                    paddingHorizontal: 6,
+                    marginTop: 0,
+                }
+            }) 
+        },
+        options: {
+            option1: "Usando a tag <Modal> content <Modal/>",
+            option2: "Usando a tag <UpperText content = {} />",
+            option3: "Usar um if(pagina_renderizada) { content }",
+            option4: "Não é possivel",
+        },
+        answer: {
+            op1: 1,
+            op2: 0,
+            op3: 0,
+            op4: 0,
+        },
+        timer: {
+            time: 15,
+        },
+        additionalBoxStyle: StyleSheet.create({
+            index: {
+                width: "90%"
+            }
+        })
+
+        ,
+        additionalTextStyle: StyleSheet.create({
+            index: {
+                fontSize: 16,
+                textAlign: "center",
+                padding: 2,
+            }
+        })
+
+    },
+    question5: {
+        question: {
+            questionNum: "Quinta Questão",
+            questionText: "Qual tipo de navegação do react-navigation esse quiz está utilizando?",
+            questionStyle: StyleSheet.create({
+                index: {
+                    
+                }
+            }) 
+        },
+        options: {
+            option1: "StackNavigator",
+            option2: "AnimatedSwitchNavigator",
+            option3: "DrawerNavigator",
+            option4: "BottomTabNavigator",
+        },
+        answer: {
+            op1: 1,
+            op2: 0,
+            op3: 0,
+            op4: 0,
+        },
+        timer: {
+            time: 5000,
+        },
+        additionalBoxStyle: StyleSheet.create({
+            index: {
+                width: "75%"
+            }
+        })
+
+        ,
+        additionalTextStyle: StyleSheet.create({
+            index: {
+                fontSize: 20,
+            }
+        })
+
     },
 }
 
