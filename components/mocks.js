@@ -1,11 +1,11 @@
 import { StyleSheet } from "react-native"
-
+const time = 30
 
 const mocks = {
-    question1: {
+    question7: {
         question: {
-            questionNum: "Primeira Questão",
-            questionText: "Qual dessas opções representa uma tag de texto corretamente em React Native?",
+            questionNum: "Sétima Questão",
+            questionText: "Qual dessas opções representa uma tag de texto usada corretamente em React Native?",
             questionStyle: StyleSheet.create({
                 index: {
                     
@@ -22,7 +22,7 @@ const mocks = {
             op2: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -38,9 +38,9 @@ const mocks = {
         })
 
     },
-    question2: {
+    question6: {
         question: {
-            questionNum: "Segunda Questão",
+            questionNum: "Sexta Questão",
             questionText: "Qual dos opções abaixo representa a forma de correta de se usar uma imagem em React Native? \n(x = image source) ",
             questionStyle: StyleSheet.create({
                 index: {
@@ -58,7 +58,7 @@ const mocks = {
             op1: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -73,9 +73,9 @@ const mocks = {
             }
         })
     },
-    question3: {
+    question1: {
         question: {
-            questionNum: "Terceira Questão",
+            questionNum: "Primeira Questão",
             questionText: "Qual dos opções abaixo representa o comando para instalar o expo? ",
             questionStyle: StyleSheet.create({
                 index: {
@@ -93,7 +93,7 @@ const mocks = {
             op4: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -108,9 +108,9 @@ const mocks = {
             }
         })
     },
-    question4: {
+    question5: {
         question: {
-            questionNum: "Quarta Questão",
+            questionNum: "Quinta Questão",
             questionText: "Qual dessas opções se refere a forma correta de fazer um conteúdo sobrepor outro? \n content = (componentes da página)",
             questionStyle: StyleSheet.create({
                 index: {
@@ -130,7 +130,7 @@ const mocks = {
             op1: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -148,9 +148,9 @@ const mocks = {
         })
 
     },
-    question5: {
+    question4: {
         question: {
-            questionNum: "Quinta Questão",
+            questionNum: "Qurta Questão",
             questionText: "Qual tipo de navegação do react-navigation esse quiz está utilizando?",
             questionStyle: StyleSheet.create({
                 index: {
@@ -168,7 +168,7 @@ const mocks = {
             op1: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -184,9 +184,9 @@ const mocks = {
         })
 
     },
-    question6: {
+    question3: {
         question: {
-            questionNum: "Sexta Questão",
+            questionNum: "Terceira Questão",
             questionText: "Onde podemos colocar os estilos das nossas páginas em React Native?",
             questionStyle: StyleSheet.create({
                 index: {
@@ -196,8 +196,8 @@ const mocks = {
         },
         options: {
             option1: "Importando um arquivo .css com os estilos",
-            option2: "Um arquivo *.js com StyleSheet.create(estilos)",
-            option3: "Uma variável contendo o StyleSheet.create(estilos)",
+            option2: "Em um arquivo *.js contendo um StyleSheet.create(estilos)",
+            option3: "Em uma variável contendo o StyleSheet.create(estilos)",
             option4: "Não é possível armazenar estilos",
         },
         answer: {
@@ -205,7 +205,7 @@ const mocks = {
             op3: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -223,10 +223,10 @@ const mocks = {
         })
 
     },
-    question7: {
+    question2: {
         question: {
-            questionNum: "Sétima Questão",
-            questionText: "Qual é o import devemos utilizar para que o JSX funcione corretamente no React-Native?",
+            questionNum: "Segunda Questão",
+            questionText: "Qual import devemos utilizar para que o JSX funcione corretamente no React-Native?",
             questionStyle: StyleSheet.create({
                 index: {
                     paddingVertical: 5,
@@ -243,7 +243,7 @@ const mocks = {
             op1: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -274,7 +274,7 @@ const mocks = {
         },
         options: {
             option1: "expo use-font -g arial",
-            option2: "expo install-font @expo-google-fonts arial",
+            option2: "expo install-font @google-fonts arial",
             option3: "expo install expo-font @expo-google-fonts/arial",
             option4: "expo get -f -g arial",
         },
@@ -282,7 +282,7 @@ const mocks = {
             op3: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -303,7 +303,7 @@ const mocks = {
     question9: {
         question: {
             questionNum: "Nona Questão",
-            questionText: "Estabelecendo uma comparação entre HTML e JSX, qual seria o equivalente de uma div em JSX??",
+            questionText: "Estabelecendo uma comparação entre HTML e JSX, qual seria o equivalente a uma tag div em JSX?",
             questionStyle: StyleSheet.create({
                 index: {
                     fontSize: 20,
@@ -312,16 +312,16 @@ const mocks = {
             }) 
         },
         options: {
-            option1: "<Image/>",
+            option1: "<Image></Image>",
             option2: "<View></View>",
             option3: "<TouchableHighlight/>",
-            option4: "<Division>",
+            option4: "<Division></Division>",
         },
         answer: {
             op2: true,
         },
         timer: {
-            time: 1000,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
@@ -357,7 +357,7 @@ const mocks = {
             op3: true,
         },
         timer: {
-            time: 15,
+            time: time,
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
