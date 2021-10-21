@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    image: {
+    congratulationsImage: {
         resizeMode: "contain",
         width: 260,
         height: 260,
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         color: "#0EF043",
         fontWeight: "bold"
     },
-    container: {
+    winContainer: {
         alignItems: "center",
         justifyContent: "center",
         flex: 1,
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         height: 60,
         width: 270,
         backgroundColor: "orange",
-        borderColor: "#D44426",
+        borderColor: "#E36600",
         borderWidth: 6,
         borderRadius: 5,
         alignItems: "center",
@@ -36,18 +36,21 @@ const styles = StyleSheet.create({
         color: "#201F1F",
         fontWeight: "bold",
       },
-    main: {
+    home: {
         alignItems: "center",
         justifyContent: "center",
         alignContent: "center",
         flex: 1,
-        marginBottom: "30%",
+        paddingBottom: "30%",
         marginTop: 0,
+        backgroundColor: "white"
 
     },
     quizText: {
         fontSize: 20,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        color: "#17363B",
+        textAlign: "center"
     }, 
     modalView: {
         height: "100%",
@@ -117,6 +120,11 @@ const styles = StyleSheet.create({
         textAlign: "center",
         color: "#0D8094",
         paddingHorizontal: 7,
+        borderWidth: 3,
+        borderColor: "black",
+        borderRadius: 15,
+        marginHorizontal: 6,
+        marginTop: 10,
         
     },
     optionsContainer: {
@@ -126,19 +134,25 @@ const styles = StyleSheet.create({
     },
     timerContainer: {
         alignItems: 'center',
+        alignContent: "center",
+        marginBottom: 30,
     },
     timer: {
-          fontFamily: "OpenSans_700Bold",
-          fontSize: 30,
-          color: "red",
-          marginTop: 5,
-          marginBottom: 40,
+        fontFamily: "OpenSans_700Bold",
+        fontSize: 30,
+        color: "#1B52BF",
+        marginTop: 5,
     },
+    alarm: {
+        color: "red",
+    },
+
     homeScreenImage: {
         resizeMode: "contain",
         width: "45%",
-        height: "37%"
+        height: "35%",
+        marginTop: 5,
     }
 })
 
-export default styles
+export default styles;

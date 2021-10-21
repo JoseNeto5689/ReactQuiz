@@ -5,9 +5,9 @@ import styles from "./styles";
 
 export default function({ navigation }){
     return <>
-        <View style = { styles.container } >
-            <Text style = { styles.congratulations } >Parabéns! Você Venceu!</Text>
-            <Image source = { require("../src/spamton.gif")} style = { styles.image } />
+        <View style = { styles.winContainer } >
+            <Text style = { styles.congratulations } >{"Parabéns! Você Venceu! \n Você acaba de ganhar \n $ 1 KROMER $ "}</Text>
+            <Image source = { require("../src/spamton.gif")} style = { styles.congratulationsImage } />
             <Option content = { "Voltar ao Menu" } action = { () => { navigation.navigate("HomeScreen") } } />
         </View>
     </>

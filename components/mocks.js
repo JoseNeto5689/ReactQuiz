@@ -120,7 +120,7 @@ const mocks = {
     question4: {
         question: {
             questionNum: "Quarta Questão",
-            questionText: "Qual dessas opções se refere a forma correta de fazer um conteúdo sobrepor outro? \n content = (elementos sobrepostos)",
+            questionText: "Qual dessas opções se refere a forma correta de fazer um conteúdo sobrepor outro? \n content = (componentes da página)",
             questionStyle: StyleSheet.create({
                 index: {
                     fontSize: 20,
@@ -187,7 +187,7 @@ const mocks = {
         },
         additionalBoxStyle: StyleSheet.create({
             index: {
-                width: "75%"
+                width: "85%"
             }
         })
 

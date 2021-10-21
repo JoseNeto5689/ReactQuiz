@@ -37,7 +37,7 @@ export default function({ question, options, timer, navigation, answer, nextScre
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option3 } action = { () => { clearInterval(time);verify(answer.op3) } } />
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option4 } action = { () => { clearInterval(time);verify(answer.op4) } } />
         </View>
-        
+        <Line/>
         <Timer time = {seconds}/>
       </View>
     </> }
