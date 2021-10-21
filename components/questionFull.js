@@ -5,7 +5,6 @@ import Timer from "./timer"
 import Error from './error';
 import Option from './option';
 import styles from './styles';
-import Line from './line';
 
 export default function({ question, options, timer, navigation, answer, nextScreen, additionalBoxStyle, additionalTextStyle }) {
   let time
@@ -18,18 +17,18 @@ export default function({ question, options, timer, navigation, answer, nextScre
     }
     }})
 
-  const verify = (num) => {
-    if(num === 0){
-      navigation.navigate("Error")
+  const verify = (value) => {
+    if(value === true){
+      navigation.navigate(nextScreen)
+      return
     }
-    if(num === 1){
-    navigation.navigate(nextScreen)
-    }
+    navigation.navigate("Error")
+
   }
   if(seconds !== 0){
     return <>
       <StatusBar style="auto" />
-      <View style = { { backgroundColor: "#EBEBEB", height: "100%", alignItems: "center", justifyContent: "space-between" } } >
+      <View style = { { backgroundColor: "#ebeced", height: "100%", alignItems: "center", justifyContent: "space-between" } } >
         <Question {...question}/>
         <View style = { styles.optionsContainer } >
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option1 } action = { () => { clearInterval(time);verify(answer.op1) } } />
@@ -37,7 +36,6 @@ export default function({ question, options, timer, navigation, answer, nextScre
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option3 } action = { () => { clearInterval(time);verify(answer.op3) } } />
           <Option boxStyle = { additionalBoxStyle.index } textStyle = { additionalTextStyle.index } content = { options.option4 } action = { () => { clearInterval(time);verify(answer.op4) } } />
         </View>
-        <Line/>
         <Timer time = {seconds}/>
       </View>
     </> }

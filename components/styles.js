@@ -23,8 +23,8 @@ const styles = StyleSheet.create({
     optionBox: {
         height: 60,
         width: 270,
-        backgroundColor: "orange",
-        borderColor: "#E36600",
+        backgroundColor: "#f6aa1c",
+        borderColor: "#bc3908",
         borderWidth: 6,
         borderRadius: 5,
         alignItems: "center",
@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
         flex: 1,
         paddingBottom: "30%",
         marginTop: 0,
-        backgroundColor: "white"
+        backgroundColor: "#ebeced"
 
     },
     quizText: {
-        fontSize: 20,
+        fontSize: 25,
         fontWeight: "bold",
-        color: "#17363B",
+        color: "#033270",
         textAlign: "center"
     }, 
     modalView: {
@@ -62,24 +62,25 @@ const styles = StyleSheet.create({
     failBox: {
         height: "25%",
         width: "80%",
-        backgroundColor: "#2596be",
+        backgroundColor: "#9dcee2",
         borderRadius: 20,
         borderWidth: 4,
-        borderColor: "yellow",
+        borderColor: "#033270",
         marginBottom: "30%",
     },
     failTitle: {
         textAlign: "center",
         marginTop: 30,
         fontSize: 24,
-        color: "red",
+        color: "#033270",
         fontWeight: "bold",
+        textDecorationLine: "underline"
     },
     failMsg: {
         marginTop: 10,
         textAlign: "center",
         fontSize: 22,
-        color: "white",
+        color: "#4091c9",
     },
     failOptions:{
         marginTop: 25,
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
         paddingVertical: 5,
         borderWidth: 3,
-        borderColor: "black",
+        borderColor: "#033270",
         borderRadius: 5,
         marginHorizontal: 10,
         backgroundColor: "green",
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
         paddingVertical: 5,
         borderWidth: 3,
-        borderColor: "black",
+        borderColor: "#033270",
         borderRadius: 5,
         marginHorizontal: 10,
         backgroundColor: "red",
@@ -113,18 +114,19 @@ const styles = StyleSheet.create({
         marginTop: 30,
         fontFamily: "Inter_900Black",
         fontSize: 28,
+        color: "#033270"
     },
     questionText: {
         fontFamily: "Inter_400Regular",
         fontSize: 22,
         textAlign: "center",
-        color: "#0D8094",
         paddingHorizontal: 7,
         borderWidth: 3,
         borderColor: "black",
         borderRadius: 15,
         marginHorizontal: 6,
         marginTop: 10,
+        backgroundColor: "white"
         
     },
     optionsContainer: {
@@ -135,16 +137,16 @@ const styles = StyleSheet.create({
     timerContainer: {
         alignItems: 'center',
         alignContent: "center",
-        marginBottom: 30,
+        marginBottom: 35,
     },
     timer: {
-        fontFamily: "OpenSans_700Bold",
-        fontSize: 30,
+        fontFamily: "OpenSans_600SemiBold",
+        fontSize: 40,
         color: "#1B52BF",
-        marginTop: 5,
     },
     alarm: {
         color: "red",
+        fontFamily: "OpenSans_700Bold",
     },
 
     homeScreenImage: {

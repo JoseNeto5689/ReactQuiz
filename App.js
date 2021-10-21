@@ -40,9 +40,40 @@ function Question04({ navigation }){
 
 function Question05({ navigation }){
   return <>
-    <Question { ...mocks.question5 } navigation = { navigation } nextScreen = "WinScreen"/>
+    <Question { ...mocks.question5 } navigation = { navigation } nextScreen = "Question06"/>
   </>
 }
+
+function Question06({ navigation }){
+  return <>
+    <Question { ...mocks.question6 } navigation = { navigation } nextScreen = "Question07"/>
+  </>
+}
+
+function Question07({ navigation }){
+  return <>
+    <Question { ...mocks.question7 } navigation = { navigation } nextScreen = "Question08"/>
+  </>
+}
+
+function Question08({ navigation }){
+  return <>
+    <Question { ...mocks.question8 } navigation = { navigation } nextScreen = "Question09"/>
+  </>
+}
+
+function Question09({ navigation }){
+  return <>
+    <Question { ...mocks.question9 } navigation = { navigation } nextScreen = "Question10"/>
+  </>
+}
+
+function Question10({ navigation }){
+  return <>
+    <Question { ...mocks.question10 } navigation = { navigation } nextScreen = "WinScreen"/>
+  </>
+}
+
 
 function Winner({ navigation }){
   return <Win navigation = { navigation } />
@@ -64,6 +95,11 @@ export default function App() {
       <Stack.Screen name = "Question03" component = { Question03 } options = { { headerShown: false } } />
       <Stack.Screen name = "Question04" component = { Question04 } options = { { headerShown: false } } />
       <Stack.Screen name = "Question05" component = { Question05 } options = { { headerShown: false } } />
+      <Stack.Screen name = "Question06" component = { Question06 } options = { { headerShown: false } } />
+      <Stack.Screen name = "Question07" component = { Question07 } options = { { headerShown: false } } />
+      <Stack.Screen name = "Question08" component = { Question08 } options = { { headerShown: false } } />
+      <Stack.Screen name = "Question09" component = { Question09 } options = { { headerShown: false } } />
+      <Stack.Screen name = "Question10" component = { Question10 } options = { { headerShown: false } } />
       <Stack.Screen name = "WinScreen" component = { Winner } options = { { headerShown: false } } />
       <Stack.Screen name = "Error" component = { Erro } options = { { headerShown: false } } />
     </Stack.Navigator>
