@@ -9,7 +9,7 @@ export default function({ navigation }) {
         {/*<ImageBackground source = { background } resizeMode = "cover" style = {{ width: "100%", height: "100%" }}>*/}
             <View style = {styles.home}>
                 {/*<Image source = { require("../src/brain-reduzido.png") }/>*/}
-                <Text style = { styles.quizText} >{"Now's your chance to be a \n [BIG SHOT]"}</Text>
+                <Text style = { styles.quizText} >{"Now's your chance to be a \n"} <Text style = {{ color: "red" }}>[BIG SHOT]</Text></Text>
                 <Image source = { require("../src/spamton-quiz.png") } style = { styles.homeScreenImage } />
                 <View>
                 <Option content = { "Iniciar Jogo" } action = { () => { navigation.navigate("Question01") } } />

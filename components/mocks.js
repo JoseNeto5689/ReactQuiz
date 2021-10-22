@@ -76,7 +76,7 @@ const mocks = {
     question1: {
         question: {
             questionNum: "Primeira Questão",
-            questionText: "Qual dos opções abaixo representa o comando para instalar o expo? ",
+            questionText: "Qual dos opções abaixo representa o comando correto para instalar o expo? ",
             questionStyle: StyleSheet.create({
                 index: {
                     fontSize: 23
@@ -150,7 +150,7 @@ const mocks = {
     },
     question4: {
         question: {
-            questionNum: "Qurta Questão",
+            questionNum: "Quarta Questão",
             questionText: "Qual tipo de navegação do react-navigation esse quiz está utilizando?",
             questionStyle: StyleSheet.create({
                 index: {
@@ -265,7 +265,7 @@ const mocks = {
     question8: {
         question: {
             questionNum: "Oitava Questão",
-            questionText: "Qual o comando para instalar fonts no react native utilizando o expo-cli?",
+            questionText: "Qual comando usamos para instalar fonts no react native utilizando o expo-cli?",
             questionStyle: StyleSheet.create({
                 index: {
                     paddingHorizontal: 7
